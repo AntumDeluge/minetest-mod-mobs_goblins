@@ -335,7 +335,7 @@ mobs_goblins:register_mob("mobs_goblins:goblin_digger", {
 
 		mobs_goblins:capture_mob(self, clicker, 0, 5, 80, false, nil)
 	end,
-		
+	--[[
 	do_custom = function(self)
 		mobs_goblins.goblin_tunneling(self, "digger")
 
@@ -343,6 +343,7 @@ mobs_goblins:register_mob("mobs_goblins:goblin_digger", {
 		-- mobs_goblins.search_replace(self.object:getpos(), 10, {"group:stone"}, "default:mossycobble")
 		-- mobs_goblins.search_replace(self.object:getpos(), 50, {"group:stone"}, "mobs_goblins:mossycobble_trap")
 	end,
+	]]
 })
 
 mobs_goblins:register_mob("mobs_goblins:goblin_coal", {
